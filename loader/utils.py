@@ -25,7 +25,7 @@ def save_picture(add_picture) -> str:
     filename = add_picture.filename
     # Записываем в переменную путь для добавления картинки
     save_path = f'uploads/images/{filename}'
-    # Сохраняем картинку по указанному пути
+    # Сохраняем картинку по сохраненному выше пути
     add_picture.save(save_path)
     return save_path
 
